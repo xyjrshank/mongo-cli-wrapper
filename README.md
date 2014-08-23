@@ -1,7 +1,7 @@
 mongo-cli-wrapper
 =================
 
-Wraps mongo command in a wrapper that reads the profile from a file, much like MySQL's .my.cnf.
+Wraps mongo command in a wrapper that reads the profile from a file, much like MySQL's .my.cnf. This version assumes you are connecting to a replica set.
 
 Requires jq (http://stedolan.github.io/jq/) to be in your path.
 
