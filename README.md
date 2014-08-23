@@ -3,6 +3,8 @@ mongo-cli-wrapper
 
 Wraps mongo command in a wrapper that reads the profile from a file, much like MySQL's .my.cnf.
 
+Requires jq (http://stedolan.github.io/jq/) to be in your path.
+
 Uses two files:
 
 * mongo-func.sh: Source this in your login script or add it to /etc/profile.d/ to make available to all users.
