@@ -20,11 +20,5 @@ function mongo() {
     done
   fi
 
-  mdbhostname=${mongohost[$mongoprof]}
-  mdbport=${mongoport[$mongoprof]}
-  mbdusername=${mongouser[$mongoprof]}
-  mbdpassword=${mongopass[$mongoprof]}
-  mbdsetid=${mongosetid[$mongoprof]}
-
   /usr/bin/mongo --host ${mongosetid[$mongoprof]}/${mongohost[$mongoprof]}:${mongoport[$mongoprof]} --username ${mongouser[$mongoprof]} --password ${mongopass[$mongoprof]} admin "$@"
 }
